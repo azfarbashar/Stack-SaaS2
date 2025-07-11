@@ -1,3 +1,10 @@
+"use client"
+
+import { useState } from 'react';
+
+export default function TitleGenerator() {
+  const [titles, setTitles] = useState<string[]>([]);
+
 export default function ArticleWriter({ title, onBack }: { title: string, onBack: () => void }) {
   return (
     <div className="space-y-6">
