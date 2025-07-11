@@ -53,3 +53,9 @@ export default function Button({
     </button>
   );
 }
+<Button 
+  variant="primary" 
+  onClick={() => console.log('Clicked!')}
+>
+  Test Button
+</Button>
