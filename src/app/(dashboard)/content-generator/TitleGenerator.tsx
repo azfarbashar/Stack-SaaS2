@@ -1,4 +1,10 @@
-export default function TitleGenerator({ onSelect }: { onSelect: (title: string) => void }) {
+"use client"
+
+import { useState } from 'react';
+
+export default function TitleGenerator() {
+  const [titles, setTitles] = useState<string[]>([]);
+  export default function TitleGenerator({ onSelect }: { onSelect: (title: string) => void }) {
   return (
     <div className="space-y-4">
       <button
