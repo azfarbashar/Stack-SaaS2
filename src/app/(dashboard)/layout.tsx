@@ -1,3 +1,9 @@
+"use client"
+
+import { useState } from 'react';
+
+export default function TitleGenerator() {
+  const [titles, setTitles] = useState<string[]>([]);
 import { auth } from "@/auth" // Example: NextAuth.js or Supabase auth
 import { redirect } from "next/navigation"
 
