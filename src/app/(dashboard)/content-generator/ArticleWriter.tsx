@@ -1,14 +1,16 @@
-// src/app/(dashboard)/content-generator/ArticleWriter.tsx
 export default function ArticleWriter({ title, onBack }: { title: string, onBack: () => void }) {
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <p>This is where your generated article will appear.</p>
-      <button 
+    <div className="space-y-6">
+      <h2 className="text-2xl font-bold">{title}</h2>
+      <p className="text-gray-600">
+        This is where your generated article will appear. 
+        Connect to OpenAI API to add real content generation.
+      </p>
+      <button
         onClick={onBack}
-        className="mt-4 text-blue-500"
+        className="text-blue-600 hover:underline"
       >
-        ← Back to Titles
+        ← Back to title selection
       </button>
     </div>
   );
