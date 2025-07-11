@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    @apply scroll-smooth; /* Smooth scrolling */
+  }
+  body {
+    @apply bg-white text-gray-900 antialiased; /* Default colors and anti-aliasing */
+    font-feature-settings: 'rlig' 1, 'calt' 1; /* Better font rendering */
+  }
+}
+
+/* Custom components */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; /* Better text wrapping */
+  }
+}
