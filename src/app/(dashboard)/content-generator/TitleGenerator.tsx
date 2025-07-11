@@ -1,12 +1,11 @@
-// src/app/(dashboard)/content-generator/TitleGenerator.tsx
 export default function TitleGenerator({ onSelect }: { onSelect: (title: string) => void }) {
   return (
-    <div>
-      <button 
-        onClick={() => onSelect("Sample AI-Generated Title")}
-        className="bg-blue-500 text-white px-4 py-2 rounded"
+    <div className="space-y-4">
+      <button
+        onClick={() => onSelect("How AI Transforms Content Creation")}
+        className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
       >
-        Generate Demo Titles
+        Generate Sample Title
       </button>
     </div>
   );
