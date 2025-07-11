@@ -1,3 +1,9 @@
+"use client"
+
+import { useState } from 'react';
+
+export default function TitleGenerator() {
+  const [titles, setTitles] = useState<string[]>([]);
 import Link from 'next/link';
 
 export default function Sidebar() {
